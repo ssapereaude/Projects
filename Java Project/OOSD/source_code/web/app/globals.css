@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--bg-dark: 24 26 32;
+		--bg-light: 235 235 235;
+		--primary-light: 252 213 53;
+		--primary-dark: 240 185 11;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	main {
+		@apply pt-20;
+	}
+
+	section {
+		@apply px-[15%];
+	}
+}
+
+@layer components {
+	.modal {
+		@apply bg-bg-dark py-12 px-16 rounded-lg animate-appear;
+	}
+	.modal form {
+		@apply flex flex-col gap-6;
+	}
+}
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
