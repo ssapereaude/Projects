@@ -1,5 +1,5 @@
 # Projects
-List of a few projects that have been successfully developed during my studies.
+List of a few projects that have been successfully developed during my studies:
 
 •   Easy68K Linux Command Learning Environment, Solo Project: The tool was developed to help students with learning Linux commands in the most engaging format.  (02/2024)
 Technologies used: Assembly 68000
