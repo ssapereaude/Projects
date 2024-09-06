@@ -1,0 +1,77 @@
+getSideIndex(siteName){
+    siteIndex
+
+    for(i=0; i<sites.length; i++){
+        if(sites[i].name == siteName){
+            siteIndex = i
+        }
+    }
+
+    return siteIndex
+}
+
+insertEdge(firstSiteIndex){
+
+    for(c=0; c<adjacencyMatrix.length; c++){
+        if(adjacencyMatrix[firstSiteIndex][c]==0){
+            Output sites[c].name + " " + c
+        }
+    }
+
+    Input c  
+    Input weight 
+
+    adjacencyMatrix[firstSiteIndex][c] = weight
+    adjacencyMatrix[c][firstSiteIndex] = weight
+}
+
+searchForEdge(firstSiteIndex){
+    input siteName2
+
+    secondSiteIndex = getSiteIndex(secondSiteName)
+
+    if(adjacencyMatrix[firstSiteIndex][secondSiteIndex]>0){
+        Output "There is a connection, the weight is " + adjacencyMatrix[firstSiteIndex][secondSiteIndex]
+    } else {
+        Output "There is no connection"
+    }
+}
+
+connectedSites(siteIndex){
+
+    for(c=0; c<adjacencyMatrix.length; c++){
+        if(adjacencyMatrix[firstSiteIndex][c]>0){
+            Output sites[c].name + " is connected, the weight is " + adjacencyMatrix[firstSiteIndex][c]
+        }
+    }
+
+}
+
+displayClosestSite(firstSiteIndex){
+
+    smallestWeight = infinity
+    closestSiteName
+
+    for(c=0; c<adjacencyMatrix.length; c++){
+        if(adjacencyMatrix[siteIndex][c]>0){
+            if(adjacencyMatrix[siteIndex][c]<smallestWeight){
+                smallestWeight = adjacencyMatrix[siteIndex][c]
+                closestSiteName = sites[c].name
+            }
+            
+        }
+    }
+
+    Output "The closes site is " + closestSiteName + ", with the weight of " + smallestWeight
+}
+
+searchForSite(){
+    Input siteName
+    siteIndex = getSiteIndex(siteName)
+
+    Output sites[siteIndex].name
+    Output sites[siteIndex].coordinates 
+
+    displayClosestSite(siteIndex)
+    connectedSites(siteIndex)
+}
