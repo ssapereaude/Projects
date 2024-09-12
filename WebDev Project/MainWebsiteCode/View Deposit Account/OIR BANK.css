@@ -1,0 +1,216 @@
+
+body
+    {
+        margin: 0;
+        background-color: #006600;
+        font-family: 'Times New Roman', Times, serif;
+        color: gold;
+    }
+
+img
+    {
+        height: 100px;
+        width: 100px;
+        align-self: center;
+        position: relative;
+        top: -35px;
+    }
+
+.navbar
+    {
+        display:flex;
+        background-color: #004400;
+        justify-content: center;
+        flex-direction: row;
+        min-height: 50px;
+        max-height: 120px;
+        min-width:fit-content;
+        align-items: center;
+    }
+.nav-list
+	{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        min-height: 50px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+	}
+
+li
+    {
+        display: block;
+        position: relative;
+        top: 35px;
+        padding-right: 6px;
+    }
+
+a:link
+    {
+        color:white;
+        text-decoration: none;
+    }
+
+a:visited
+    {
+        color:white;
+        text-decoration: none;
+    }
+
+a:hover
+    {
+        color:gold;
+        text-decoration: none;
+    }
+
+a:active
+    {
+        color:goldenrod;
+        text-decoration: none;
+    }
+a.dropdownItem:link
+    {
+        color:#001100;
+        text-decoration: none;
+    }
+
+a.dropdownItem:visited
+    {
+        color:#001100;
+        text-decoration: none;
+    }
+
+a.dropdownItem:hover
+    {
+        color:#001100;
+        text-decoration: none;
+    }
+
+a.dropdownItem:active
+    {
+        color:#001100;
+        text-decoration: none;
+    }
+.dropdown 
+    {
+        position: relative;
+        display: inline-block;
+    }
+.dropdown-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: goldenrod;
+        min-width: 160px;
+        border: 3px solid rgb(152, 117, 28);
+        padding: 5px;
+        z-index: 1;
+    }
+.dropdown-content-loan
+    {
+        display: none;
+        position: absolute;
+        background-color: goldenrod;
+        min-width: 160px;
+        border: 3px solid rgb(152, 117, 28);
+        padding: 5px;
+        z-index: 2;
+    }
+.dropdown-content-current
+    {
+        display: none;
+        position: absolute;
+        background-color: goldenrod;
+        min-width: 160px;
+        border: 3px solid rgb(152, 117, 28);
+        padding: 5px;
+        z-index: 2;
+    }
+.dropdown-content-deposit
+    {
+        display: none;
+        position: absolute;
+        background-color: goldenrod;
+        min-width: 160px;
+        border: 3px solid rgb(152, 117, 28);
+        padding: 5px;
+        z-index: 2;
+    }
+.nestedLoan
+    {
+        position: relative;
+        display: inline-block;
+    }
+.nestedCurrent
+    {
+        position: relative;
+        display: inline-block;
+    }
+.nestedDeposit
+    {
+        position: relative;
+        display: inline-block;
+    }
+.dropdown:hover .dropdown-content 
+    {
+        display: block;
+    }
+.nestedLoan:hover .dropdown-content-loan
+    {
+        display: block;
+    }
+.nestedCurrent:hover .dropdown-content-current
+    {
+        display: block;
+    }
+.nestedDeposit:hover .dropdown-content-deposit
+    {
+        display: block;
+    }
+.subjectbox
+    {
+        background-color: #009900;
+        padding: 10px;
+        color: #FFFFFF;
+        margin: 50px;
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(white, goldenrod) 30;
+    }
+p.subjectboxtext
+    {
+        font-size: 20px;
+    }
+
+.inputbox {
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+.inputbox label {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.inputbox input {
+	
+    display: inline-block; 
+    width: 150px;
+    height:20px;
+    text-align: left;
+    border-style: solid;
+    border-image: linear-gradient(white, goldenrod) 3;
+    background-color: white;
+    color: black;
+}
+
+/*.inputbox :disabled {
+    background-color: lightgray;
+    color: red;
+}*/
+
+.myButton {
+    padding: 3px;
+}
